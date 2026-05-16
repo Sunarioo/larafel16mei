@@ -46,7 +46,7 @@ class FakultasController extends Controller
             'nama_dekan' => $request->nama_dekan,
         ]);
 
-        return redirect('/fakultas');
+        return redirect('/fakultas')->with('success', 'Fakultas Berhasil Disimpan ^_^');
     }
 
     /**
